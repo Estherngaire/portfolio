@@ -1,4 +1,16 @@
 <%- include('partials/header') %>
+<% if (typeof success !== 'undefined') { %>
+  <div class="bg-green-100 text-green-700 p-3 rounded mb-4">
+    <%= success %>
+  </div>
+<% } %>
+
+<% if (typeof error !== 'undefined') { %>
+  <div class="bg-red-100 text-red-700 p-3 rounded mb-4">
+    <%= error %>
+  </div>
+<% } %>
+
 <main class="bg-primary flex-grow flex items-center justify-center p-4">
  <div class="flex flex-col max-w-md">
     <h1 class="text-xl md:text-2xl">Contact Me</h1>
@@ -19,5 +31,15 @@
         <button type="submit" class="bg-secondary text-neutralDark px-10 py-4 rounded self-center mt-3">Send Message</button>
     </form>
  </div>
+ <script>
+  const form = document.getElementById('contactForm');
+  const button = form.querySelector('button');
+
+  form.addEventListener('submit', () => {
+    button.disabled = true;
+    button.innerText = 'Sending message... please wait';
+  });
+</script>
+
 </main>
 <%- include('partials/footer') %>

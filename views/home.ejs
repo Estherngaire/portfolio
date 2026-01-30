@@ -1,5 +1,16 @@
 <%- include ('partials/header') %>
 <main class="bg-primary">
+    <div class="bg-yellow-50 text-yellow-700 text-sm p-3 rounded mb-4">
+  ⏳ This site may take a few seconds to load on first visit due to free hosting.
+  Thank you for your patience.
+</div>
+
+<script>
+  setTimeout(() => {
+    const notice = document.querySelector('.bg-yellow-50');
+    if (notice) notice.remove();
+  }, 8000);
+</script>
     <div class="flex flex-col md:flex-row lg:flex-row justify-evenly">
      <div class="w-full md:w-1/2 lg:w-1/2">
         <img src="/images/profile.jpg" alt="Esther's Profile Picture" class="w-full h-80 object-cover rounded-full">
