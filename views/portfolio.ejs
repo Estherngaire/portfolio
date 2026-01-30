@@ -1,0 +1,25 @@
+<%- include ('partials/header') %>
+<main class="bg-primary flex-grow p-6">
+    <h1 class="text-xl md:text-2xl text-center font-semibold">My Projects</h1>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div class="flex flex-col">
+            <img src="/images/landingpage.png" alt="LandingPage" class="rounded w-11 h-11">
+            <h2 class="text-lg md:text-xl">Landing Page Website</h2>
+            <p class="text-base md:text-lg">A short description of what the project does...</p>
+            <div class="flex flex-row gap-12">
+              <a href="https://final-project-sigma-two.vercel.app" class="bg-secondary px-4 py-2 rounded">View</a>
+              <a href="https://github.com/Estherngaire/FinalProject.git" class="bg-secondary px-4 py-2 rounded">Github</a>
+            </div>
+            
+        </div>
+
+        <div class="flex flex-col">
+            <img src="/images/project2.png" alt="Project 2">
+            <h2 class="text-lg md:text-xl">Personal Portfolio Website</h2>
+            <p class="text-base md:text-lg">A responsive personal portfolio website built using Node.js, Express, and EJS.Features multiple pages, dynamic routing, and a functional contact form powered by Nodemailer and environment variables.</p>
+            <a href="/project2" class="bg-secondary px-4 py-2 rounded self-center">View</a>
+        </div>
+    </div>
+</main>
+<%- include ('partials/footer') %>

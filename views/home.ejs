@@ -1,0 +1,38 @@
+<%- include ('partials/header') %>
+<main class="bg-primary">
+    <div class="flex flex-col md:flex-row lg:flex-row justify-evenly">
+     <div class="w-full md:w-1/2 lg:w-1/2">
+        <img src="/images/profile.jpg" alt="Esther's Profile Picture" class="w-full h-80 object-cover rounded-full">
+     </div>
+     <div class="w-full md:w-1/2 flex flex-col justify-center lg:w-1/2">
+        <h1 class="text-2xl md:text-3xl lg:text-3xl">Hello,I'm Esther - I build Websites and explore designs </h1>
+        <p class="text-lg md:text-xl lg:text-xl">I love turning ideas into websites that actually work and look good. I’m also diving into graphic design, so expect a mix of clean code and creative visuals. Take a look at my projects and see what I’ve been up to!</p>
+        <button class="flex justify-center mt-2"><a href="/portfolio" class="bg-secondary px-12 py-3 rounded-lg">Explore</a></button>
+     </div>
+    </div>
+    <div class="mt-4 p-3">
+        <h2 class="text-2xl md:text-3xl lg:text-3xl">About Me</h2>
+        <p class="text-lg md:text-xl lg:text-xl">I’m a web developer who loves learning and taking on new challenges. I enjoy building websites and exploring graphic design while experimenting with new tools and ideas.</p>
+        <button class="flex justify-center mt-2"><a href="/about" class="bg-secondary px-12 py-3 rounded-lg">Learn More</a></button>
+    </div>
+    <div class="mt-4">
+        <h2 class="text-2xl md:text-3xl lg:text-3xl">Project Showcase</h2>
+        <p class="text-lg md:text-xl lg:text-xl">These are a few projects I’ve worked on while learning and experimenting.</p>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div class="flex flex-col">
+            <img src="/images/project1.png" alt="Project 1">
+            <h2 class="text-lg md:text-xl lg:text-xl">Project Title 1</h2>
+            <p class="text-base md:text-lg lg:text-lg">A short description of what the project does...</p>
+            <button class="flex justify-center mt-2"><a href="/project1" class="bg-secondary p-3 rounded-lg">View Details</a></button>
+        </div>
+
+        <div class=" flex flex-col">
+            <img src="/images/project2.png" alt="Project 2">
+            <h2 class="text-lg md:text-xl lg:text-xl">Project Title 2</h2>
+            <p class="text-base md:text-lg lg:text-lg" >A short description of what the project does...</p>
+            <button class="flex justify-center mt-2"><a href="/project2" class="bg-secondary p-3 rounded-lg">View Details</a></button>
+        </div>
+</div>        
+</main>
+<%- include ('partials/footer') %>
